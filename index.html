@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Корзина</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="products">
+        <div class="item" id="item1" draggable="true" ondragstart="return dragStart(event)" ondrop="event.stopPropagation();" data-price="500">
+            <div class="icon" style="background-image: url('./img/cap.png');"></div>            
+            <div class="price">500</div>
+        </div>
+        <div class="item" id="item2" draggable="true" ondragstart="return dragStart(event)" ondrop="event.stopPropagation();" data-price="8000">
+            <div class="icon" style="background-image: url('./img/phone.png');"></div>             
+            <div class="price">8000</div>
+        </div>
+        <div class="item" id="item3" draggable="true" ondragstart="return dragStart(event)" ondrop="event.stopPropagation();" data-price="4000">
+            <div class="icon" style="background-image: url('./img/extinguisher.png');"></div>             
+            <div class="price">4000</div>
+        </div>
+        <div class="item" id="item4" draggable="true" ondragstart="return dragStart(event)" ondrop="event.stopPropagation();" data-price="1000">
+            <div class="icon" style="background-image: url('./img/flower.png');"></div>            
+            <div class="price">1000</div>
+        </div>        
+    </div>
+    <div class="cart">
+        <div class="wrapper">
+            <div class="sum">20000</div>
+            <div class="list" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)"></div>
+        </div>
+    </div>    
+</body>
+</html>
